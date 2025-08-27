@@ -1,25 +1,32 @@
 body{
     background-color: rgb(9, 9, 73);
     margin: 0%;
-     display: flex;
-     flex-direction: column;
-    overflow-x:scroll;
-     overflow-y:scroll;
+     width: 100%;
+   height: 100vh;
+   overflow-y: hidden;
+}
+.parent{
+    display: flex;
+    flex-direction: column;
+     width: 100%;
+   height: 100vh;
 }
 .first{
-    width: 100vh;
-   height: 120px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-.secours{
     width: 100%;
    height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-     background-color: rgb(17, 2, 58)
+}
+.secours{
+    min-width: 100%;
+   height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+     background-color: rgb(194, 84, 161);
+     box-sizing: border-box;
+     margin: auto;
 }
 .first1{
      width: 100px;
@@ -47,6 +54,13 @@ list-style: none;
     color: blue;
     font-size: 20px;
 
+
+}
+.bj{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    margin: auto 0 ;
 }
 .second{
     width: 100%;
@@ -69,14 +83,9 @@ p2 strong{
     color: blue;
 }
 img{
-    width: 350px;
-    height: 380px;
-    border-radius: 80%;
-}
-@media  (min-width:360px)and(max-width:480px){
-img{
- width: 150px;
-    height: 180px;
-    border-radius: 50%;
-}
+Height:auto;
+Margin:0 auto;
+border-radius: 50%;
+ width: 100%;
+ max-width: 250px;
 }
