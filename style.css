@@ -24,7 +24,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-     background-color: rgb(194, 84, 161);
+     background-color: rgb(117, 84, 194);
      box-sizing: border-box;
      margin: auto;
 }
@@ -68,10 +68,11 @@ list-style: none;
     display: flex;
     justify-content: space-around;
     align-items: center;
-   
+    flex-direction: row-reverse;
+  
 }
 .second1{
-    color: white;
+    color: white;    
 }
 p1,p3{
     font-size: 25px;
@@ -83,9 +84,19 @@ p2 strong{
     color: blue;
 }
 img{
-Height:auto;
+    Height:300px;
 Margin:0 auto;
 border-radius: 50%;
  width: 100%;
  max-width: 250px;
+}
+@media (max-width:480px) {
+    .second{
+    width: 100%;
+    min-height: 380px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ flex-direction: column;
+    }
 }
