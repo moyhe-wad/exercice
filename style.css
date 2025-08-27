@@ -73,3 +73,10 @@ img{
     height: 380px;
     border-radius: 80%;
 }
+@media  (min-width:360px)and(max-width:480px){
+img{
+ width: 150px;
+    height: 180px;
+    border-radius: 50%;
+}
+}
